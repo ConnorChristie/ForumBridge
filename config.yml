@@ -1,0 +1,44 @@
+db-host: localhost
+db-port: 3306
+db-database: database
+db-username: username
+db-password: password
+
+# For xenForo custom user fields
+multi-tables: false
+# Use a custom ban field
+use-banned-field: true
+# Permissions that you use either PEX "Only one setup ATM"
+permissions-system: PEX
+
+users-table:
+    # The users table
+    table: xf_user
+    # User id field
+    user-id-field: user_id
+    # Group numbers for down below
+    groups-id-field: user_group_id
+    # Uses this if multi-tables is false
+    username-field: username
+    # Is either 0 or 1
+    banned-field: is_banned
+    # If banned field is false then specify the banned users group for the site "Dont specify it below"
+    banned-users-group: 0
+    # Group to be set to once unbanned "Refers to below"
+    default-group: 1
+multi-table:
+    # The custom user fields table
+    table: xf_user_field_value
+    # Field id field
+    field-id-field: field_id
+    # Field value field "Their minecraft name"
+    field-value-field: field_value
+    # Field id name
+    field-id-name: minecraft_name
+
+groups:
+    1: Guest
+    2: Member
+    3: Admin
+    4: Mod
+    5: VIP
