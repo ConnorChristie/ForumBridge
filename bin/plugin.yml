@@ -1,0 +1,21 @@
+author: ChillerCraft
+description: Forum bridge plugin
+main: net.chillercraft.forum.Main
+name: ForumBridge
+version: 1.2
+commands:
+    fban:
+        description: Bans from the forum.
+        usage: /fban <username>
+    funban:
+        description: Unbans from the forum.
+        usage: /funban <username>
+    frank:
+        description: Ranks on the forum.
+        usage: /frank <username> <rank>
+    sync:
+        description: Syncs to the forum.
+        usage: /sync
+    fsyncall:
+        description: Syncs everyone to the forum.
+        usage: /fsyncall
